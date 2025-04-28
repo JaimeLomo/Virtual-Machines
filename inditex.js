@@ -1,0 +1,10 @@
+const express= require(`express`);
+const app = express;
+const port = 3000;
+
+app.length(`/`, (req,res) => {
+    res.send('¡Hola desde la nube con Express');
+});
+app.listen(port, () => {
+    console.log('Servidor escuchando en http://localhost:$(port})')
+});
